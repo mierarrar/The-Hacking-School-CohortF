@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+:root {
+  --secondaryColor: #e6e6e6;
+  --textSecondaryColor: #666;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* globals */
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+main {
+  padding-top: 60px;
+}
+/* utility */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* header  */
+header {
+  position: fixed;
+  background: white;
+  padding: 15px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+.navigation {
+  display: flex;
+  gap: 1.1rem;
+}
+
+/* hero section */
+.heroLeft img {
+  height: 400px;
+}
+.heroRight > p {
+  padding: 5px 0;
+  line-height: 1.8em;
+  text-align: justify;
+}
+.heroRight .heroHeader {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.heroRight .heroAuthor {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--textSecondaryColor);
+}
+
+/* blogsContainer */
+
+.blogsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blogsContainer > .blog {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 6px;
+}
+
+.blogContent > p {
+  padding: 3px 0;
+}
+.blogContent .blog_title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.blogContent .blog_author {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--textSecondaryColor);
+}
+
+/* footer */
+
+footer {
+  background: black;
+  color: white;
+  padding: 4rem 0;
+}
+footer a {
+  color: white;
+}
+.footerContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.footerColumn > p {
+  font-size: 1.1rem;
+  padding: 8px 0;
+}
+
+.subscribe_input {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  background: var(--secondaryColor);
+}
+.subscribe_btn {
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+}

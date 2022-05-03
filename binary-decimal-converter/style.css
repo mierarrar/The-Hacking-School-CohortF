@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+        body {
+            font-family: 'Lora', serif;
+        }
+        .wrapper {
+            background-color: rgb(110, 108, 108);
+            margin: 10%;
+            padding: 1em;
+            border-radius: 5em;
+            border-style: outset;
+            border-width: 10px;
+        }
+        .container{
+            margin: 10%;
+            padding: 1em;
+            background-color: rgb(202, 196, 196);
+            text-align: center;
+            border-radius: 5em;
+            border-style: outset;
+            border-width: 4px;
+        }
+
+        input,
+        button{
+            border-radius: 30px;
+            padding: 10px;
+            border-style: outset;
+            border-width: 4px;
+        }
+        
+        .refresh {
+            margin-left: 45%;
+            padding: 20px auto;
+        }
+       

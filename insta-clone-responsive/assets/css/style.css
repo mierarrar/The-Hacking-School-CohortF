@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Josefin+Slab&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Slab", serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  line-height: 1.6rem;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  margin-bottom: 3rem;
+  background-color: #fafafa;
+  font-size: 16px;
+}
+.container {
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+nav .nav-search {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav-search-bar {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 4rem;
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+.nav-search-bar button {
+  font-size: 1rem;
+  color: #262626;
+  border-style: none;
+  border-width: 0px;
+  height: 100%;
+  width: 20%;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.search {
+  padding-left: 1rem;
+  width: 80%;
+  border: none;
+  background-color: inherit;
+  font-size: 1.5rem;
+  height: 100%;
+  outline: none;
+}
+
+.instagram-logo {
+  width: 100px;
+  align-self: center;
+}
+
+.nav-location {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 3rem;
+  margin-top: 30px;
+}
+
+.profile-image {
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.profile-settings {
+  display: flex;
+  align-items: center;
+}
+
+.profile-user-name {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.profile-edit-btn {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.3rem;
+  padding: 0 2.4rem;
+  margin-left: 2rem;
+}
+
+.profile-settings-btn {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  padding: 0 0.7rem;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+}
+
+.profile-stats ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-stats li {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.profile-stat-count,
+.profile-real-name,
+.profile-edit-btn {
+  font-weight: 700;
+}
+.profile-bio {
+  width: 75%;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.highlights-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 90px;
+ 
+}
+ 
+.story img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: rgb(142, 226, 222);
+}
+
+.story-text {
+  text-align: center;
+}
+
+
+.gallery {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* grid-auto-rows: 1fr; */
+}
+.gallery-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 576px) {
+
+  .profile-stats {
+    display: none;
+  }
+  
+  .profile-edit-btn {
+    display:none;
+  }
+  .nav-location {
+    display: none;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: 400px;
+    margin-left: 50px;
+  }
+
+  .story {
+    display: grid;
+    grid-template-columns: 50px;
+  }
+}
