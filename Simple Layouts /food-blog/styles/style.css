@@ -55,9 +55,7 @@ header {
 }
 
 /* hero section */
-.heroLeft img {
-  height: 400px;
-}
+
 .heroRight > p {
   padding: 5px 0;
   line-height: 1.8em;
